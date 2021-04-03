@@ -1,0 +1,304 @@
+html{
+  scroll-behavior: smooth;
+}body
+{
+   margin: 0px;
+   padding: 0px;
+   font-family: Arial, Helvetica, sans-serif;
+   box-sizing: border-box;
+  }
+
+
+/*----------------------------header css------------------------*/
+#header{
+  height: 100vh;
+ 
+	background: url("../assets/images/bg.jpg");
+   background-position: center;
+   background-size: cover;
+   background-repeat: repeat;
+   background-attachment: fixed;
+}
+.user-box
+{
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	position: absolute;
+
+}
+.user-box img
+{
+	border-radius: 50%;
+	width: 350px;
+	border: 2px solid #6caed5;
+
+}
+.scroll-btn{
+  bottom: 30px;
+  position: absolute;
+  left:50%;
+  transform: translate(-50%);
+  border:1px solid #fff;
+  padding:10px 10px 20px;
+  border-radius:30px;
+}
+.scroll-bar span
+{
+  border: 2px solid #fff;
+  font-size: 10px;
+  border-radius:30px;
+}
+
+.scroll-bar
+{
+ animation: mover is infinite alternate;
+}
+@keyframes mover
+{
+   0%{transform: translateY(0);}
+   100%{transform: translateY(10px);}
+}
+
+form.example input[type=text] {
+   padding: 10px;
+   font-size: 17px;
+   border: 1px solid grey;
+   float: left;
+   width: 80%;
+   background: #f1f1f1;
+ }
+ 
+ form.example button {
+   float: left;
+   width: 20%;
+   padding: 10px;
+   background: #2196F3;
+   color: white;
+   font-size: 17px;
+   border: 1px solid grey;
+   border-left: none;
+   cursor: pointer;
+ }
+ 
+ form.example button:hover {
+   background: #0b7dda;
+ }
+ 
+ form.example::after {
+   content: "";
+   clear: both;
+   display: table;
+ }
+
+.nav-item{
+   
+    padding-right: 150px;
+ }
+
+ .navbar-brand{
+    padding-left: 230px;
+ } 
+
+ /*-----pokemon-card -------*/
+ .pokemon-card-container{
+  background: linear-gradient(to right, rgb(12, 55, 90), rgba(37, 48, 68, 0.658));
+  width: 350px;
+  height: auto;
+  margin: 10%;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px black;
+}
+
+.background{
+ text-align: center;
+ background: linear-gradient(to right, rgb(61, 15, 228), rgb(14, 230, 212));
+ border-top-right-radius: 10px;
+ border-top-left-radius: 10px;
+}
+
+.image{
+  width: 200px;
+  height: 200px;
+}
+
+.content{
+  background: linear-gradient(to right, rgb(61, 15, 228), rgb(14, 230, 212));
+   padding: 10px;
+   border-bottom-right-radius: 10px;
+   border-bottom-left-radius: 10px;
+   color: white;
+}
+
+.pokemon-name{
+  text-align: center;
+  font-size: 20px;
+  font-weight: lighter;
+  padding: 10px;
+  color: white;
+}
+
+.pokemon-type{
+  background-color:black;
+  padding: 7px;
+  color: white;
+  border-radius: 5px; 
+  width: 100px;
+  display: block;
+  text-align: center;
+  position: relative;
+  top: -46px;
+}
+
+.pokemon-logo{
+  text-align: center;
+  font-size: 14px;
+  padding: 20px;
+}
+
+.pokemon-status > p {
+  letter-spacing: 0.5px;
+  line-height: 4px;
+}
+
+/*---charmander----*/
+#charmander-pokemon-card-container{
+  background: linear-gradient(to right, rgb(37, 19, 4), rgba(243, 114, 34, 0.658));
+}
+
+#charmander-background{
+  background: linear-gradient(to right, rgb(236, 133, 36), rgb(119, 76, 10));
+}
+
+#charmander-content{
+  background: linear-gradient(to right, rgb(236, 133, 36), rgb(119, 76, 10));
+}
+
+/*---Charizard----*/
+#charizard-pokemon-card-container{
+  background: linear-gradient(to right, rgb(20, 15, 11), rgba(175, 100, 53, 0.658));
+}
+
+#charizard-background{
+  background: linear-gradient(to right, rgb(231, 120, 16), rgb(240, 197, 8));
+}
+
+#charizard-content{
+  background: linear-gradient(to right, rgb(231, 120, 16), rgb(240, 197, 8));
+}
+
+/*------wartortle------*/
+#wartortle-pokemon-card-container{
+  background: linear-gradient(to right, rgb(9, 27, 59), rgba(9, 24, 245, 0.658));
+}
+
+#wartortle-background{
+  background: linear-gradient(to right, rgb(112, 145, 207) rgb(50, 93, 112));
+}
+
+#wartortle-content{
+ background: linear-gradient(to right, rgb(112, 145, 207) rgb(50, 93, 112));
+}
+
+/*------caterpie------*/
+#caterpie-pokemon-card-container{
+  background: linear-gradient(to right, rgb(2, 12, 1), rgba(18, 212, 44, 0.658));
+}
+#caterpie-background{
+  background: linear-gradient(to right, rgb(71, 236, 71), rgb(11, 17, 9));
+}
+#caterpie-content{
+  background: linear-gradient(to right, rgb(71, 236, 71), rgb(11, 17, 9));
+}
+
+
+
+/*------butterfree------*/
+#butterfree-pokemon-card-container{
+  background: linear-gradient(to right, rgb(5, 48, 175), rgba(18, 65, 136, 0.658));
+}
+#butterfree-background{
+  background: linear-gradient(to right, rgb(98, 233, 238), rgb(11, 36, 44));
+}
+#butterfree-content{
+  background: linear-gradient(to right, rgb(98, 233, 238), rgb(11, 36, 44));
+}
+
+/*-----kakuna-------*/
+#kakuna-pokemon-card-container{
+  background: linear-gradient(to right, rgb(235, 122, 17), rgba(146, 27, 11, 0.658));
+}
+#kakuna-background{
+  background: linear-gradient(to right, rgb(243, 76, 25), rgb(216, 186, 19));
+}
+#kakuna-content{
+  background: linear-gradient(to right, rgb(243, 76, 25), rgb(216, 186, 19));
+}
+
+/*----pidgey------*/
+#pidgey-pokemon-card-container{
+  background: linear-gradient(to right, rgb(83, 45, 8), rgba(43, 8, 4, 0.658));
+}
+#pidgey-background{
+  background: linear-gradient(to right, rgb(20, 7, 3), rgb(231, 204, 49));
+}
+#pidgey-content{
+  background: linear-gradient(to right, rgb(20, 7, 3), rgb(231, 204, 49));
+}
+
+/*----pidgeot------*/
+#pidgeot-pokemon-card-container{
+  background: linear-gradient(to right, rgb(7, 25, 58), rgba(228, 196, 14, 0.658));
+}
+#pidgeot-background{
+  background: linear-gradient(to right, rgb(20, 26, 112), rgb(163, 212, 28));
+}
+#pidgeot-content{
+  background: linear-gradient(to right, rgb(20, 26, 112), rgb(163, 212, 28));
+}
+
+/*----raticate------*/
+#raticate-pokemon-card-container{
+  background: linear-gradient(to right, rgb(58, 23, 7), rgba(228, 196, 14, 0.658));
+}
+#raticate-background{
+  background: linear-gradient(to right, rgb(15, 7, 2), rgb(163, 212, 28));
+}
+#raticate-content{
+  background: linear-gradient(to right, rgb(15, 7, 2), rgb(163, 212, 28));
+}
+
+
+
+/*------ivysaur details-------*/
+.card-body > h1 {
+  text-align: center;
+  font-weight: lighter;
+  text-shadow:  -1px 0px 1px black;
+}
+
+
+
+
+
+
+/* My code starts from here RKM*/
+
+.modal .image {
+    width: 200px;
+    height: 200px;
+    -moz-transform: scale(-1, -1);
+    -o-transform: scale(-1, -1);
+    -webkit-transform: scale(-1, -1);
+    transform: scale(-1, 1);
+     position: absolute;
+      margin: auto;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+}
+.modal-body .row >div {
+  padding: 0;
+}

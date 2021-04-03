@@ -1,0 +1,900 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+       <!--====== Required meta tags ======-->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="Pokemon">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--====== Title ======-->
+    <title>Pokemon</title>
+    <link rel="shortcut icon" href="./assets/images/llogo.png" title="Pokemon" type="image/png">
+    <link rel="stylesheet" type="text/css" href="./assets/style.css">
+    <!--fa fa icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    
+  </head>
+  <body>
+      <!-------------------Header Section--------------------->
+     <section id="header">
+        <div class="container text-center " >
+            <div class="poketext">
+                <img src="./assets/images/llogo.png" alt="flashpokemon logo" style="width: 280px; height: 200px;">
+            </div>
+            <div class="user-box">
+                <img src="./assets/images/pokemon-flash-gif.gif">
+            </div>
+        </div>
+            <div class="btn-adjustmnt" style="padding-top: 40px;">
+            <div class="scroll-btn" >
+            <div class="scroll-bar" ><a href="#pokemon-move"><span></span></a></div>
+        </div>
+        </div>
+    
+        </section>
+        <!---------------------Header section end---------------------------->
+
+        <!---------------------pokemon-move section start---------------------------->
+        <section id="pokemon-move">
+            <div class="nav-bar">
+    <nav class="navbar navbar-expand-lg bg-info navbar-info">
+    <a class="navbar-brand" href="#"><img src = "./assets/images/navlogo.png" style= "width: 150px"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        <i class="fa fa-bars"></i>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#"></a>
+              </li>
+        </ul>
+         <form class="example"  style="margin:auto;max-width:300px">   <!--Search code start-->
+            <input type="text" id="searchPoke" placeholder="Search.." name="search2" onkeyup="displaySearch(this)">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>      <!--search code end-->
+        </div>
+  </nav>
+  </div> <!--Nav  bar end here-->
+
+           <!--------------------------Pokemon-card start-------------------------------->
+            <div class="container" id="myrowdatas">
+              <div class="row">    <!----first row starts here----->
+                <div class="col-sm-4 commonClass Ivysaur">
+                  <div class="pokemon-card-container">
+                    <div class="pokemon-card">
+                        <div class="background">
+                          <img src="./assets/images/Ivysaur.png" alt="ivysaur" class="image">
+                        </div>
+                        <div class="content">
+                          <h1 class="pokemon-name"><b>Ivysaur</b></h1>
+                          <button type="button" class="pokemon-type" data-toggle="modal" data-target="#Ivysaur">Grass</button>
+                          
+                            <div class="pokemon-status">
+                                <p>Power : 74</p>
+                                <p>Damage : 78</p>
+                                <p>Attacks :Electro ball</p>
+                                <p>Health: 88</p>
+                                <p>Friendly : 78</p>
+                             </div>
+                              <h1 class="pokemon-logo">Pokemon Cards</h1>
+                        </div>
+                    </div>
+                  </div>
+                 </div>
+
+                 <div class="col-sm-4 commonClass Charmander">
+                  <div class="pokemon-card-container" id="charmander-pokemon-card-container">
+                    <div class="pokemon-card">
+                        <div class="background" id="charmander-background">
+                          <img src="./assets/images/charmander.png" alt="charmander" class="image">
+                        </div>
+                        <div class="content" id="charmander-content">
+                            <h1 class="pokemon-name"><b>Charmander</b></h1>
+                            <button type="button" class="pokemon-type" data-toggle="modal" data-target="#Charmander">Fire</button>
+                            <div class="pokemon-status">
+                                <p>Power : 76</p>
+                                <p>Damage : 95</p>
+                                <p>Attacks :Fire Blast</p>
+                                <p>Health: 88</p>
+                                <p>Friendly : 78</p>
+                             </div>
+                              <h1 class="pokemon-logo">Pokemon Cards</h1>
+                        </div>
+                    </div>
+                  </div>
+                 </div>
+
+                 <div class="col-sm-4 commonClass Charizard">
+                  <div class="pokemon-card-container" id="charizard-pokemon-card-container">
+                    <div class="pokemon-card">
+                        <div class="background" id="charizard-background">
+                          <img src="./assets/images/charizard.png" alt="charizard" class="image">
+                        </div>
+                        <div class="content" id="charizard-content">
+                            <h1 class="pokemon-name"><b>Charizard</b></h1>
+                             <button type="button" class="pokemon-type" data-toggle="modal" data-target="#Charizard">Flying</button>
+                            <div class="pokemon-status">
+                                <p>Power : 74</p>
+                                <p>Damage : 78</p>
+                                <p>Attacks :Electro ball</p>
+                                <p>Health: 88</p>
+                                <p>Friendly : 78</p>
+                             </div>
+                              <h1 class="pokemon-logo">Pokemon Cards</h1>
+                        </div>
+                    </div>
+                  </div>
+                 </div>
+              </div>   <!----first row ends here----->
+
+
+
+              <div class="row">  <!---second row starts here----->
+                <div class="col-sm-4 commonClass Wartortle">
+                  <div class="pokemon-card-container" id="wartortle-pokemon-card-container">
+                    <div class="pokemon-card">
+                        <div class="background" id="wartortle-background">
+                          <img src="./assets/images/wartortle.png" alt="wartortle" class="image">
+                        </div>
+                        <div class="content" id="#wartortle-content">
+                            <h1 class="pokemon-name"><b>Wartortle</b></h1>
+                            <button type="button" class="pokemon-type" data-toggle="modal" data-target="#Wartortle">Water</button>
+                            <div class="pokemon-status">
+                                <p>Power : 74</p>
+                                <p>Damage : 88</p>
+                                <p>Attacks :Electro ball</p>
+                                <p>Health: 78</p>
+                                <p>Friendly : 98</p>
+                             </div>
+                              <h1 class="pokemon-logo">Pokemon Cards</h1>
+                        </div>
+                    </div>
+                  </div>
+                 </div>
+
+                 <div class="col-sm-4 commonClass Caterpie">
+                  <div class="pokemon-card-container" id="caterpie-pokemon-card-container">
+                    <div class="pokemon-card">
+                        <div class="background" id="caterpie-background">
+                          <img src="./assets/images/caterpie.png" alt="caterpie" class="image">
+                        </div>
+                        <div class="content" id="caterpie-content">
+                            <h1 class="pokemon-name"><b>Caterpie</b></h1>
+                            <button type="button" class="pokemon-type" data-toggle="modal" data-target="#Caterpie">Bug</button>
+                            <div class="pokemon-status">
+                                <p>Power : 76</p>
+                                <p>Damage : 85</p>
+                                <p>Attacks :Fire Blast</p>
+                                <p>Health: 68</p>
+                                <p>Friendly : 78</p>
+                             </div>
+                              <h1 class="pokemon-logo">Pokemon Cards</h1>
+                        </div>
+                    </div>
+                  </div>
+                 </div>
+
+                 <div class="col-sm-4 commonClass Butterfree">
+                  <div class="pokemon-card-container" id="butterfree-pokemon-card-container">
+                    <div class="pokemon-card">
+                        <div class="background" id="butterfree-background">
+                          <img src="./assets/images/butterfree.png" alt="butterfree" class="image">
+                        </div>
+                        <div class="content" id="butterfree-content">
+                            <h1 class="pokemon-name"><b>Butterfree</b></h1>
+                            <button type="button" class="pokemon-type" data-toggle="modal" data-target="#Butterfree">Bug</button>
+                            <div class="pokemon-status">
+                                <p>Power : 74</p>
+                                <p>Damage : 78</p>
+                                <p>Attacks :Electro ball</p>
+                                <p>Health: 90</p>
+                                <p>Friendly : 78</p>
+                             </div>
+                              <h1 class="pokemon-logo">Pokemon Cards</h1>
+                        </div>
+                    </div>
+                  </div>
+                 </div>
+              </div>    <!--------Second row ends here------------->
+
+
+
+              <div class="row">    <!----Third row ends here----->
+                <div class="col-sm-4 commonClass Kakuna">
+                  <div class="pokemon-card-container" id="kakuna-pokemon-card-container">
+                    <div class="pokemon-card">
+                        <div class="background" id="kakuna-background">
+                          <img src="./assets/images/kakuna.png" alt="kakuna" class="image">
+                        </div>
+                        <div class="content" id="kakuna-content">
+                            <h1 class="pokemon-name"><b>Kakuna</b></h1>
+                            <button type="button" class="pokemon-type" data-toggle="modal" data-target="#Kakuna">Poison</button>
+                            <div class="pokemon-status">
+                                <p>Power : 84</p>
+                                <p>Damage : 78</p>
+                                <p>Attacks :Electro ball</p>
+                                <p>Health: 85</p>
+                                <p>Friendly : 85</p>
+                             </div>
+                              <h1 class="pokemon-logo">Pokemon Cards</h1>
+                        </div>
+                    </div>
+                  </div>
+                 </div>
+
+                 <div class="col-sm-4 commonClass Pidgey">
+                  <div class="pokemon-card-container" id="pidgey-pokemon-card-container">
+                    <div class="pokemon-card">
+                        <div class="background" id="pidgey-background">
+                          <img src="./assets/images/pidgey.png" alt="pidgey" class="image">
+                        </div>
+                        <div class="content" id="pidgey-content" >
+                            <h1 class="pokemon-name"><b>Pidgey</b></h1>
+                            <button type="button" class="pokemon-type" data-toggle="modal" data-target="#Pidgey">Flying</button>
+                            <div class="pokemon-status">
+                                <p>Power : 76</p>
+                                <p>Damage : 95</p>
+                                <p>Attacks :Fire Blast</p>
+                                <p>Health: 88</p>
+                                <p>Friendly : 78</p>
+                             </div>
+                              <h1 class="pokemon-logo">Pokemon Cards</h1>
+                        </div>
+                    </div>
+                  </div>
+                 </div>
+
+                 <div class="col-sm-4 commonClass Pidgeot">
+                  <div class="pokemon-card-container" id="pidgeot-pokemon-card-container">
+                    <div class="pokemon-card">
+                        <div class="background" id="pidgeot-background">
+                          <img src="./assets/images/pidgeot.png" alt="pidgeot" class="image">
+                        </div>
+                        <div class="content" id="pidgeot-content">
+                            <h1 class="pokemon-name"><b>Pidgeot</b></h1>
+                            <button type="button" class="pokemon-type" data-toggle="modal" data-target="#Pidgeot">Flying</button>
+                            <div class="pokemon-status">
+                                <p>Power : 74</p>
+                                <p>Damage : 85</p>
+                                <p>Attacks :Electro ball</p>
+                                <p>Health: 88</p>
+                                <p>Friendly : 78</p>
+                             </div>
+                              <h1 class="pokemon-logo">Pokemon Cards</h1>
+                        </div>
+                    </div>
+                  </div>
+                 </div>
+              </div>   <!----Third row ends here----->
+
+
+
+              <div class="row">    <!------Fourth row starts here-------->
+                <div class="col-sm-4 commonClass Raticate">
+                  <div class="pokemon-card-container" id="raticate-pokemon-card-container">
+                    <div class="pokemon-card">
+                        <div class="background" id="raticate-background">
+                          <img src="./assets/images/raticate.png" alt="raticate" class="image">
+                        </div>
+                        <div class="content" id="raticate-content">
+                            <h1 class="pokemon-name"><b>Raticate</b></h1>
+                            <button type="button" class="pokemon-type" data-toggle="modal" data-target="#Raticate">Dark</button>
+                            <div class="pokemon-status">
+                                <p>Power : 74</p>
+                                <p>Damage : 78</p>
+                                <p>Attacks :Electro ball</p>
+                                <p>Health: 88</p>
+                                <p>Friendly : 78</p>
+                             </div>
+                              <h1 class="pokemon-logo">Pokemon Cards</h1>
+                        </div>
+                    </div>
+                  </div>
+                 </div>
+              </div>   <!------Fourth row starts here-------->
+            </div>
+<!--------------------------Pokemon-card end-------------------------------->
+</section>
+<!---------------------pokemon-move section end - --------------------------->
+
+<div class="modal fade" id="Ivysaur">        <!-----Ivysaur modal part starts here------->
+  <div class="modal-dialog" style="max-width: 80%">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Ivysaur</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Ivysaur Modal body -->
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-2 commonClass">   <!---Ivysaur image start--->
+              <div class="pokemon-modal-card">
+                <img src="assets/images/Ivysaur.png" alt="ivysaur" class="image">
+              </div>
+            </div>
+             <div class="col-sm-10" id="ivysaur-details">   <!--Ivsaur image details start--->
+              <div class="shadow-lg p-3 mb-5 bg-white rounded" >
+              <div class="container" >
+                <div class="card">
+                  <div class="card-body" >
+                    <h1 >Ivysaur</h1>
+                      <p>There is a bud on this Pokémon's back. To support its weight, 
+                        Ivysaur's legs and trunk grow thick and strong. 
+                        If it starts spending more time lying in the sunlight, 
+                        it's a sign that the bud will bloom into a large flower soon.</p>
+                        <div class="row">
+                          <div class="col-sm-6 col-lg-6 col-xs-12">
+                            <p>Types: <b>Grass</b> <b>Poison</b></p>
+                            <p>Height: <b>3' 03"</b></p> 
+                            <p>Weight: <b>28.7 lbs</b></p>
+                            <p>Category: <b>Seed</b></p>
+                            <p>Abilities: <b>Overgrow</b></p>
+                          </div>
+                          <div class="col-sm-6 col-lg-6 col-xs-12">
+                            <p>Power : <strong>74</strong></p>
+                            <p>Damage : <strong>78</strong></p>
+                            <p>Attacks : <strong>Electro ball</strong></p>
+                            <p>Health: <strong>88</strong></p>
+                            <p>Friendly : <strong>78</strong></p>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+              </div>
+            </div>     
+             </div> <!--Ivsaur image details end--->
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+</div>        <!----- Ivysaur Modal part end here-------->
+
+
+<div class="modal fade" id="Charmander">        <!----- Charmander modal part starts here------->
+  <div class="modal-dialog" style="max-width: 80%">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Charmander</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-2 commonClass">   <!---Charmander image start--->
+              <div class="pokemon-modal-card">
+                <img src="assets/images/charmander.png" alt="Charmander" class="image">
+              </div>
+            </div>
+             <div class="col-sm-10" id="Charmander-details">   <!--Charmander image details start--->
+              <div class="shadow-lg p-3 mb-5 bg-white rounded" >
+              <div class="container" >
+                <div class="card">
+                  <div class="card-body" >
+                    <h1 >Charmander</h1>
+                      <p>Pokemon GO Charmander is a 
+                    Fire
+                     type Pokemon with a max CP of 980, 116 attack, 93 defense and 118 stamina in Pokemon GO. 
+                     It was originally found in the Kanto region (Gen 1). Charmander is vulnerable to Ground.</p>
+                        <div class="row">
+                          <div class="col-sm-6 col-lg-6 col-xs-12">
+                            <p>Types: <b>Grass</b> <b>Poison</b></p>
+                            <p>Height: <b>2'00" 0.6 m</b></p> 
+                            <p>Weight: <b>18.7 lbs 8.5 kg</b></p>
+                            <p>Egg Groups: <b>Monster and Dragon</b></p>
+                            <p>Abilities: <b>Solar Power</b></p>
+                          </div>
+                          <div class="col-sm-6 col-lg-6 col-xs-12">
+                            <p>Power : <strong>74</strong></p>
+                            <p>Damage : <strong>78</strong></p>
+                            <p>Attacks : <strong>Electro ball</strong></p>
+                            <p>Health: <strong>88</strong></p>
+                            <p>Friendly : <strong>78</strong></p>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+              </div>
+            </div>     
+             </div> <!--Charmander image details end--->
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+</div>        <!-----Charmander modal part end here-------->
+
+<div class="modal fade" id="Charizard">        <!----- Charizard modal part starts here------->
+  <div class="modal-dialog" style="max-width: 80%">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Charizard</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-2 commonClass">   <!---Charizard image start--->
+              <div class="pokemon-modal-card">
+                <img src="assets/images/charizard.png" alt="Charizard" class="image">
+              </div>
+            </div>
+             <div class="col-sm-10" id="Charizard-details">   <!--Charizard image details start--->
+              <div class="shadow-lg p-3 mb-5 bg-white rounded" >
+              <div class="container" >
+                <div class="card">
+                  <div class="card-body" >
+                    <h1 >Charizard</h1>
+                      <p>>Charizard has two Mega Evolutions, available from X & Y onwards.
+                        is a draconic, bipedal Pokémon. It is primarily orange with 
+                        a cream underside from the chest to the tip of its tail. It has a long neck.</p>
+                        <div class="row">
+                          <div class="col-sm-6 col-lg-6 col-xs-12">
+                            <p>Types: <b>Grass</b> <b>Poison</b></p>
+                            <p>Height: <b>2'00" 0.6 m</b></p> 
+                            <p>Weight: <b>18.7 lbs 8.5 kg</b></p>
+                            <p>Egg Groups: <b>Monster and Dragon</b></p>
+                            <p>Abilities: <b>Solar Power</b></p>
+                          </div>
+                          <div class="col-sm-6 col-lg-6 col-xs-12">
+                            <p>Power : <strong>74</strong></p>
+                            <p>Damage : <strong>78</strong></p>
+                            <p>Attacks : <strong>Electro ball</strong></p>
+                            <p>Health: <strong>88</strong></p>
+                            <p>Friendly : <strong>78</strong></p>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+              </div>
+            </div>     
+             </div> <!--Charizard image details end--->
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+</div>        <!-----Charizard modal part end here-------->  
+
+<div class="modal fade" id="Wartortle">        <!----- Wartortle modal part starts here------->
+  <div class="modal-dialog" style="max-width: 80%">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Wartortle</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-2 commonClass">   <!---Wartortle image start--->
+              <div class="pokemon-modal-card">
+                <img src="assets/images/wartortle.png" alt="Wartortle" class="image">
+              </div>
+            </div>
+             <div class="col-sm-10" id="Wartortle-details">   <!--Wartortle image details start--->
+              <div class="shadow-lg p-3 mb-5 bg-white rounded" >
+              <div class="container" >
+                <div class="card">
+                  <div class="card-body" >
+                    <h1 >Wartortle</h1>
+                      <p>>Wartortle is a bipedal, indigo Pokémon similar to a turtle.
+                        It has brown eyes, a dark blue streak on each cheek, and two sharp teeth protruding 
+                        from its upper jaw.</p>
+                        <div class="row">
+                          <div class="col-sm-6 col-lg-6 col-xs-12">
+                            <p>Types: <b>Grass</b> <b>Poison</b></p>
+                            <p>Height: <b>2'00" 0.6 m</b></p> 
+                            <p>Weight: <b>18.7 lbs 8.5 kg</b></p>
+                            <p>Egg Groups: <b>Monster and Dragon</b></p>
+                            <p>Abilities: <b>Solar Power</b></p>
+                          </div>
+                          <div class="col-sm-6 col-lg-6 col-xs-12">
+                            <p>Power : <strong>74</strong></p>
+                            <p>Damage : <strong>78</strong></p>
+                            <p>Attacks : <strong>Electro ball</strong></p>
+                            <p>Health: <strong>88</strong></p>
+                            <p>Friendly : <strong>78</strong></p>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+              </div>
+            </div>     
+             </div> <!--Wartortle image details end--->
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+</div>        <!-----Wartortle modal part end here-------->  
+
+<div class="modal fade" id="Caterpie">        <!----- Caterpie modal part starts here------->
+  <div class="modal-dialog" style="max-width: 80%">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Caterpie</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-2 commonClass">   <!---Caterpie image start--->
+              <div class="pokemon-modal-card">
+                <img src="assets/images/caterpie.png" alt="Caterpie" class="image">
+              </div>
+            </div>
+             <div class="col-sm-10" id="Caterpie-details">   <!--Caterpie image details start--->
+              <div class="shadow-lg p-3 mb-5 bg-white rounded" >
+              <div class="container" >
+                <div class="card">
+                  <div class="card-body" >
+                    <h1 >Caterpie</h1>
+                      <p>>Caterpie is a Pokémon that resembles a green caterpillar with 
+                        a yellow underside and teardrop-shaped tail. There are yellow 
+                        ring-shaped markings down the sides of its segmented body.</p>
+                        <div class="row">
+                          <div class="col-sm-6 col-lg-6 col-xs-12">
+                            <p>Types: <b>Grass</b> <b>Poison</b></p>
+                            <p>Height: <b>2'00" 0.6 m</b></p> 
+                            <p>Weight: <b>18.7 lbs 8.5 kg</b></p>
+                            <p>Egg Groups: <b>Monster and Dragon</b></p>
+                            <p>Abilities: <b>Solar Power</b></p>
+                          </div>
+                          <div class="col-sm-6 col-lg-6 col-xs-12">
+                            <p>Power : <strong>74</strong></p>
+                            <p>Damage : <strong>78</strong></p>
+                            <p>Attacks : <strong>Electro ball</strong></p>
+                            <p>Health: <strong>88</strong></p>
+                            <p>Friendly : <strong>78</strong></p>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+              </div>
+            </div>     
+             </div> <!--Caterpie image details end--->
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+</div>        <!-----Caterpie modal part end here-------->  
+
+<div class="modal fade" id="Butterfree">        <!-----Butterfree modal part starts here------->
+  <div class="modal-dialog" style="max-width: 80%">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Butterfree</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Butterfree Modal body -->
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-2 commonClass">   <!---Butterfree image start--->
+              <div class="pokemon-modal-card">
+                <img src="assets/images/butterfree.png" alt="Butterfree" class="image">
+              </div>
+            </div>
+             <div class="col-sm-10" id="Butterfree-details">   <!--Butterfree image details start--->
+              <div class="shadow-lg p-3 mb-5 bg-white rounded" >
+              <div class="container" >
+                <div class="card">
+                  <div class="card-body" >
+                    <h1 >Butterfree</h1>
+                      <p>Butterfree resembles a vaguely anthropomorphic butterfly with 
+                        a purple body. Unlike true insects, it only has two body segments 
+                        and four light blue legs.</p>
+                        <div class="row">
+                          <div class="col-sm-6 col-lg-6 col-xs-12">
+                            <p>Types: <b>Grass</b> <b>Poison</b></p>
+                            <p>Height: <b>3' 03"</b></p> 
+                            <p>Weight: <b>28.7 lbs</b></p>
+                            <p>Category: <b>Seed</b></p>
+                            <p>Abilities: <b>Overgrow</b></p>
+                          </div>
+                          <div class="col-sm-6 col-lg-6 col-xs-12">
+                            <p>Power : <strong>74</strong></p>
+                            <p>Damage : <strong>78</strong></p>
+                            <p>Attacks : <strong>Electro ball</strong></p>
+                            <p>Health: <strong>88</strong></p>
+                            <p>Friendly : <strong>78</strong></p>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+              </div>
+            </div>     
+             </div> <!--Butterfree image details end--->
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+</div>        <!----- Butterfree Modal part end here-------->
+
+
+<div class="modal fade" id="Kakuna">        <!----- Kakuna modal part starts here------->
+  <div class="modal-dialog" style="max-width: 80%">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Kakuna</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-2 commonClass">   <!---Kakuna image start--->
+              <div class="pokemon-modal-card">
+                <img src="assets/images/kakuna.png" alt="Kakuna" class="image">
+              </div>
+            </div>
+             <div class="col-sm-10" id="Kakuna-details">   <!--Kakuna image details start--->
+              <div class="shadow-lg p-3 mb-5 bg-white rounded" >
+              <div class="container" >
+                <div class="card">
+                  <div class="card-body" >
+                    <h1 >Kakuna</h1>
+                      <p>>Kakuna is a yellow, cocoon-like Pokémon. Kakuna has a dome-shaped head and black,
+                        triangular eyes. It has two scythe-like arms in the middle of its body. 
+                        When it comes close to evolving.</p>
+                        <div class="row">
+                          <div class="col-sm-6 col-lg-6 col-xs-12">
+                            <p>Types: <b>Grass</b> <b>Poison</b></p>
+                            <p>Height: <b>2'00" 0.6 m</b></p> 
+                            <p>Weight: <b>18.7 lbs 8.5 kg</b></p>
+                            <p>Egg Groups: <b>Monster and Dragon</b></p>
+                            <p>Abilities: <b>Solar Power</b></p>
+                          </div>
+                          <div class="col-sm-6 col-lg-6 col-xs-12">
+                            <p>Power : <strong>74</strong></p>
+                            <p>Damage : <strong>78</strong></p>
+                            <p>Attacks : <strong>Electro ball</strong></p>
+                            <p>Health: <strong>88</strong></p>
+                            <p>Friendly : <strong>78</strong></p>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+              </div>
+            </div>     
+             </div> <!--Kakuna image details end--->
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+</div>        <!-----Kakuna modal part end here--------> 
+
+<div class="modal fade" id="Pidgey">        <!-----Pidgey modal part starts here------->
+  <div class="modal-dialog" style="max-width: 80%">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Pidgey</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Pidgey Modal body -->
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-2 commonClass">   <!---Pidgey image start--->
+              <div class="pokemon-modal-card">
+                <img src="assets/images/pidgey.png" alt="Pidgey" class="image">
+              </div>
+            </div>
+             <div class="col-sm-10" id="Pidgey-details">   <!--Pidgey image details start--->
+              <div class="shadow-lg p-3 mb-5 bg-white rounded" >
+              <div class="container" >
+                <div class="card">
+                  <div class="card-body" >
+                    <h1 >Pidgey</h1>
+                      <p>Pidgey is a small, plump-bodied avian Pokémon. It is primarily 
+                        brown with a cream-colored face, underside, and flight feathers. 
+                        On top of its head is a short crest of three tufts.</p>
+                        <div class="row">
+                          <div class="col-sm-6 col-lg-6 col-xs-12">
+                            <p>Types: <b>Grass</b> <b>Poison</b></p>
+                            <p>Height: <b>3' 03"</b></p> 
+                            <p>Weight: <b>28.7 lbs</b></p>
+                            <p>Category: <b>Seed</b></p>
+                            <p>Abilities: <b>Overgrow</b></p>
+                          </div>
+                          <div class="col-sm-6 col-lg-6 col-xs-12">
+                            <p>Power : <strong>74</strong></p>
+                            <p>Damage : <strong>78</strong></p>
+                            <p>Attacks : <strong>Electro ball</strong></p>
+                            <p>Health: <strong>88</strong></p>
+                            <p>Friendly : <strong>78</strong></p>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+              </div>
+            </div>     
+             </div> <!--Pidgey image details end--->
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+</div>        <!----- Pidgey Modal part end here-------->
+
+
+<div class="modal fade" id="Pidgeot">        <!----- Pidgeot modal part starts here------->
+  <div class="modal-dialog" style="max-width: 80%">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Pidgeot</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-2 commonClass">   <!---Pidgeot image start--->
+              <div class="pokemon-modal-card">
+                <img src="assets/images/pidgeot.png" alt="Pidgeot" class="image">
+              </div>
+            </div>
+             <div class="col-sm-10" id="Pidgeot-details">   <!--Pidgeot image details start--->
+              <div class="shadow-lg p-3 mb-5 bg-white rounded" >
+              <div class="container" >
+                <div class="card">
+                  <div class="card-body" >
+                    <h1 >Pidgeot</h1>
+                      <p>>Pidgeot is an avian Pokémon with large wings, sharp talons, 
+                        and a short, hooked beak. Its glossy plumage 
+                        is mostly brown with cream-colored underparts and 
+                        flight feathers.</p>
+                        <div class="row">
+                          <div class="col-sm-6 col-lg-6 col-xs-12">
+                            <p>Types: <b>Grass</b> <b>Poison</b></p>
+                            <p>Height: <b>2'00" 0.6 m</b></p> 
+                            <p>Weight: <b>18.7 lbs 8.5 kg</b></p>
+                            <p>Egg Groups: <b>Monster and Dragon</b></p>
+                            <p>Abilities: <b>Solar Power</b></p>
+                          </div>
+                          <div class="col-sm-6 col-lg-6 col-xs-12">
+                            <p>Power : <strong>74</strong></p>
+                            <p>Damage : <strong>78</strong></p>
+                            <p>Attacks : <strong>Electro ball</strong></p>
+                            <p>Health: <strong>88</strong></p>
+                            <p>Friendly : <strong>78</strong></p>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+              </div>
+            </div>     
+             </div> <!--Pidgeot image details end--->
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+</div>        <!-----Pidgeot modal part end here--------> 
+
+
+<div class="modal fade" id="Raticate">        <!----- Raticate modal part starts here------->
+  <div class="modal-dialog" style="max-width: 80%">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Raticate</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-2 commonClass">   <!---Raticate image start--->
+              <div class="pokemon-modal-card">
+                <img src="assets/images/raticate.png" alt="Raticate" class="image">
+              </div>
+            </div>
+             <div class="col-sm-10" id="Raticate-details">   <!--Raticate image details start--->
+              <div class="shadow-lg p-3 mb-5 bg-white rounded" >
+              <div class="container" >
+                <div class="card">
+                  <div class="card-body" >
+                    <h1 >Raticate</h1>
+                      <p>Raticate is a large rodent Pokémon. Although it is often depicted on its hind legs, 
+                        it is a quadruped. It is mostly tawny colored with a cream underside.
+                         It has narrow black eyes.</p>
+                        <div class="row">
+                          <div class="col-sm-6 col-lg-6 col-xs-12">
+                            <p>Types: <b>Grass</b> <b>Poison</b></p>
+                            <p>Height: <b>2'00" 0.6 m</b></p> 
+                            <p>Weight: <b>18.7 lbs 8.5 kg</b></p>
+                            <p>Egg Groups: <b>Monster and Dragon</b></p>
+                            <p>Abilities: <b>Solar Power</b></p>
+                          </div>
+                          <div class="col-sm-6 col-lg-6 col-xs-12">
+                            <p>Power : <strong>74</strong></p>
+                            <p>Damage : <strong>78</strong></p>
+                            <p>Attacks : <strong>Electro ball</strong></p>
+                            <p>Health: <strong>88</strong></p>
+                            <p>Friendly : <strong>78</strong></p>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+              </div>
+            </div>     
+             </div> <!--Raticate image details end--->
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+</div>        <!-----Raticate modal part end here--------> 
+
+<footer class="sticky-footer bg-white">    <!-- Footer -->
+    <div class="container my-auto">
+      <div class="copyright text-center my-auto">
+        <span>© Copyrights 2020. All Rights Reserved by Sandhya R K</span>
+      </div>
+    </div>
+  </footer>   <!-- End of Footer -->
+    <script src="./assets/script.js"></script>
+  </body>
+</html>
